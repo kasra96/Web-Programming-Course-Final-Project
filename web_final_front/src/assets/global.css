@@ -1,0 +1,106 @@
+/* @font-face {
+    font-family: Shabnam;
+    src: url('../font/Shabnam.eot');
+    src: url('../font/Shabnam.eot?#iefix') format('embedded-opentype'),
+    url('../font/Shabnam.woff') format('woff'),
+    url('../font/Shabnam.ttf') format('truetype');
+    font-weight: normal;
+}
+@font-face {
+    font-family: Shabnam;
+    src: url('../font/Shabnam-Bold.eot');
+    src: url('../font/Shabnam-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../font/Shabnam-Bold.woff') format('woff'),
+    url('../font/Shabnam-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Shabnam;
+    src: url('../font/Shabnam-Light.eot');
+    src: url('../font/Shabnam-Light.eot?#iefix') format('embedded-opentype'),
+    url('../font/Shabnam-Light.woff') format('woff'),
+    url('../font/Shabnam-Light.ttf') format('truetype');
+    font-weight: 300;
+}
+
+* {
+    font-family: Shabnam,Arial;
+    outline: none;
+} */
+
+.centered-text {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.footer-sub-section1 {
+    display: inline-block;
+    width: 200px;
+    margin-left: 100px;
+    margin-right: 90px;
+}
+
+.footer {
+    padding-top: 30px;
+    display: flex;
+    direction: rtl;
+    background-color: rgb(32, 32, 32);
+    /* height: 200px; */
+}
+
+.footer-sub-section2 {
+    display: inline-block;
+    width: 150px;
+    height: 300px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.gray-text {
+    display: block;
+    color: gray;
+    font-size: 0.8em;
+    margin-top: 7px;
+}
+
+.white-text {
+    display: block;
+    color: white;
+    font-size: 0.85em;
+    margin-bottom: 20px;
+}
+
+.line2 {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.color1 {
+    /* color: purple; */
+    background-color: purple;
+    border: none;
+}
+
+.color2 {
+    background-color: rgb(150, 36, 70);
+    border: none;
+}
+
+.color3 {
+    background-color: rgb(153, 32, 32);
+    border: none;
+}
+
+.color4 {
+    background-color: rgb(152, 184, 36);
+    border: none;
+}
+
+.fix-position {
+    display: block;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+}
