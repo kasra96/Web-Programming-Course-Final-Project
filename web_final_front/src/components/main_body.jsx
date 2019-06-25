@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "../js/main";
 
 class MainBody extends Component {
   state = {};
