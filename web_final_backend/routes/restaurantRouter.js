@@ -1,16 +1,17 @@
 const express = require("express");
-const food = require("../models/food.js");
+const food = require("../models/food");
+const restaurant = require("../models/restaurant");
 
-const foodRouter = express.Router();
+const restaurantRouter = express.Router();
 
-foodRouter
+restaurantRouter
   .use((req, res, next) => {
     console.log("you've called food api");
     req.restaurant = {};
     next();
   })
   .get("/", (req, res) => {
-    food.model.find({}, (error, foods) => {
+    food.model.find({ name: "hiNoob" }, (error, foods) => {
       if (error) {
         res.send(error);
       }
@@ -26,4 +27,4 @@ foodRouter
       message: "success"
     });
   });
-module.exports = foodRouter;
+module.exports = restaurantRouter;

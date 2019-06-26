@@ -1,5 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
+const restaurant = require("./models/food");
 const app = express();
 const port = 3001;
 
@@ -14,8 +15,12 @@ db.once("open", function() {
 
 app.use(express.json());
 
+let restaurant_obj = new restaurant.model();
+restaurant_obj.name = "hiNoob";
+restaurant_obj.save();
+
 //routers
-const foodRouter = require("./routes/foodRouter.js");
+const foodRouter = require("./routes/restaurantRouter.js");
 app.use("/api/foods", foodRouter);
 
 app.listen(port, () => console.log(`listening on port ${port}!`));
