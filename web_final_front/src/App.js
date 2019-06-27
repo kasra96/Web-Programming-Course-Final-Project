@@ -7,11 +7,11 @@ import MainBody from "./components/main_body";
 
 function App() {
   return (
-    <React.Fragment>
+    <div className="container-fluid">
       <Header />
       <MainBody />
       <Footer />
-    </React.Fragment>
+    </div>
   );
 }
 

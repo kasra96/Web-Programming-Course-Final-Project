@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "../assets/main.css";
 
 class Footer extends Component {
   state = {};
