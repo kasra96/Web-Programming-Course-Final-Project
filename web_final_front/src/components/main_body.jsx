@@ -4,6 +4,11 @@ import "../assets/main.css";
 
 class MainBody extends Component {
   state = {};
+
+  hancleClick() {
+    console.log("clicked");
+  }
+
   render() {
     return (
       <React.Fragment>
@@ -24,7 +29,7 @@ class MainBody extends Component {
             <div className="bordered-text">
               <i className="fas fa-angle-down" />
               <select id="selectID">
-                <option value="default" disabled="" selected="">
+                <option value="default" disabled="">
                   شهر
                 </option>
                 <option value="تهران">تهران</option>
@@ -32,14 +37,25 @@ class MainBody extends Component {
               </select>
             </div>
             <fieldset className="fieldset-class1 scheduler-border">
-              <legend class="scheduler-border">منطقه خود را وارد کنید</legend>
+              <legend className="scheduler-border">
+                منطقه خود را وارد کنید
+              </legend>
               <input
                 type="text"
+                id="searchInput"
                 className="text-input"
                 placeholder="مثلا نیاوران"
               />
             </fieldset>
-            <button className="search-icon">
+            <button
+              className="search-icon"
+              onClick={() =>
+                this.props.searchMethod(
+                  document.getElementById("searchInput").value,
+                  document.getElementById("selectID").value
+                )
+              }
+            >
               <i className="fas fa-search" />
             </button>
           </div>
