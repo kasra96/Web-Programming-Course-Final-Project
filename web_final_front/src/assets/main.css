@@ -48,9 +48,9 @@
 } */
 
 #my_line {
-  background-image: linear-gradient(to right, red, purple);
-  margin: 0;
-  size: "40px";
+  background-image: linear-gradient(to right, red, purple) !important;
+  margin: 0 !important;
+  height: 3px !important;
 }
 
 .first-section {
@@ -544,4 +544,10 @@ legend.scheduler-border {
 .app-download-links div:hover {
   box-shadow: 0 0 8px #ddd;
   -webkit-box-shadow: 0 0 8px #ddd;
+}
+
+.footer {
+  display: block;
+  float: right;
+  width: 100%;
 }

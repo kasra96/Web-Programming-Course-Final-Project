@@ -7,16 +7,19 @@ const restaurantRouter = express.Router();
 restaurantRouter
   .use((req, res, next) => {
     console.log("you've called food api");
-    req.restaurant = {};
     next();
   })
   .get("/", (req, res) => {
-    food.model.find({ name: "hiNoob" }, (error, foods) => {
-      if (error) {
-        res.send(error);
+    restaurant.model.find(
+      { "address.area": req.query.area },
+      (error, restaurants) => {
+        if (error) {
+          res.send(error);
+        }
+        res.set("Access-Control-Allow-Origin", "*");
+        res.send(restaurants);
       }
-      res.send(foods);
-    });
+    );
   })
   .post("/", (req, res) => {
     let foodObject = new food.model();

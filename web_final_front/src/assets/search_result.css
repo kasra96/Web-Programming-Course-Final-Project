@@ -1,0 +1,60 @@
+.search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: rgb(235, 235, 235);
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+#first_image {
+  max-width: 100%;
+  width: auto;
+}
+
+#my_search_botton {
+  color: rgb(109, 109, 109) !important;
+}
+
+.search-container {
+  float: right;
+}
+
+#area_search {
+  padding: 6px;
+  padding-bottom: 12px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+  direction: rtl;
+  font-size: 0.9em;
+  width: 200px;
+  background: rgb(235, 235, 235);
+}
+
+#main_panel {
+  background-color: rgb(235, 235, 235);
+  min-height: 100px;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.restuarant_section {
+  padding: 10px;
+}
+
+.inner_rest_sec {
+  background-color: aliceblue;
+  margin: 10px;
+}
+
+.category_section {
+  padding: 10px;
+}
+
+.inner_cat_sec {
+  background-color: aliceblue;
+  margin: 10px;
+}
