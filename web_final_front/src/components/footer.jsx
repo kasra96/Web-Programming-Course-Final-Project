@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "../assets/main.css";
+import "../assets/global.css";
 
 class Footer extends Component {
   state = {};
@@ -14,26 +15,26 @@ class Footer extends Component {
           </span>
         </div>
         <div className="footer-sub-section2">
-          <hr size="2px" className="line2 color1" />
+          <hr className="line2 color1" />
           <span className="white-text">تماس با ریحون</span>
           <span className="gray-text">درباره ریحون</span>
           <span className="gray-text">تماس با ما</span>
           <span className="gray-text">وبلاگ ریحون</span>
         </div>
         <div className="footer-sub-section2">
-          <hr size="2px" className="line2 color2" />
+          <hr className="line2 color2" />
           <span className="white-text">رستوران‌ها</span>
           <span className="gray-text">ثبت رستوران</span>
         </div>
         <div className="footer-sub-section2">
-          <hr size="2px" className="line2 color3" />
+          <hr className="line2 color3" />
           <span className="white-text">پشتیبانی ریحون</span>
           <span className="gray-text">سوالات متداول</span>
           <span className="gray-text">تماس با پشیبانی</span>
           <span className="gray-text">قوانین و مقررات</span>
         </div>
         <div className="footer-sub-section2">
-          <hr size="2px" className="line2 color4" />
+          <hr className="line2 color4" />
           <span className="white-text">اپلیکیشن‌های موبایل</span>
           <span className="gray-text" />
         </div>

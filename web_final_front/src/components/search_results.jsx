@@ -1,18 +1,13 @@
 import React, { Component } from "react";
 import "../assets/search_result.css";
+import Restaurant from "./restaurant_card";
 
 class Search_results extends Component {
   state = {};
-  open_restaurants() {
-    return <h5>opens</h5>;
-  }
-  closed_restaurants() {
-    return <h5>closed</h5>;
-  }
+
   render() {
     return (
       <div>
-        {console.log(this.props.restaurant_array)}
         <img
           id="first_image"
           className="img-responsive"
@@ -40,10 +35,16 @@ class Search_results extends Component {
           <div className="restuarant_section col-sm-9">
             <div className="inner_rest_sec">
               <div className="restaurant_subsection">
-                {this.open_restaurants()}
+                <h4>opens</h4>
+                {this.props.open_restaurant_array.map(restaurant => (
+                  <Restaurant key={restaurant._id} rest_info={restaurant} />
+                ))}
               </div>
+              <div className="w-100" />
               <div className="restaurant_subsection">
-                {this.closed_restaurants()}
+                {this.props.close_restaurant_array.map(restaurant => (
+                  <Restaurant key={restaurant._id} rest_info={restaurant} />
+                ))}
               </div>
             </div>
           </div>

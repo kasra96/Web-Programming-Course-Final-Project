@@ -23,7 +23,7 @@ class Header extends Component {
             </a>
           </li>
         </ul>
-        <hr size="4px" id="my_line" />
+        <hr id="my_line" />
       </header>
     );
   }

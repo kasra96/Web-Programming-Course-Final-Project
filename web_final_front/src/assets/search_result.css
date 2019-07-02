@@ -58,3 +58,10 @@
   background-color: aliceblue;
   margin: 10px;
 }
+
+.card {
+  width: 30%;
+  height: auto;
+  background-color: cornsilk;
+  margin: 1em;
+}

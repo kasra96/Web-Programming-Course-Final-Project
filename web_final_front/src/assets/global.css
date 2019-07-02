@@ -30,77 +30,78 @@
 } */
 
 .centered-text {
-    display: block;
-    width: 100%;
-    text-align: center;
+  display: block;
+  width: 100%;
+  text-align: center;
 }
 
 .footer-sub-section1 {
-    display: inline-block;
-    width: 200px;
-    margin-left: 100px;
-    margin-right: 90px;
+  display: inline-block;
+  width: 200px;
+  margin-left: 100px;
+  margin-right: 90px;
 }
 
 .footer {
-    padding-top: 30px;
-    display: flex;
-    direction: rtl;
-    background-color: rgb(32, 32, 32);
-    /* height: 200px; */
+  padding-top: 30px;
+  display: flex;
+  direction: rtl;
+  background-color: rgb(32, 32, 32);
+  /* height: 200px; */
 }
 
 .footer-sub-section2 {
-    display: inline-block;
-    width: 150px;
-    height: 300px;
-    margin-left: 20px;
-    margin-right: 20px;
+  display: inline-block;
+  width: 150px;
+  height: 300px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .gray-text {
-    display: block;
-    color: gray;
-    font-size: 0.8em;
-    margin-top: 7px;
+  display: block;
+  color: gray;
+  font-size: 0.8em;
+  margin-top: 7px;
 }
 
 .white-text {
-    display: block;
-    color: white;
-    font-size: 0.85em;
-    margin-bottom: 20px;
+  display: block;
+  color: white;
+  font-size: 0.85em;
+  margin-bottom: 20px;
 }
 
 .line2 {
-    display: block;
-    margin-bottom: 20px;
+  display: block;
+  margin-bottom: 20px;
+  height: 2.5px !important;
 }
 
 .color1 {
-    /* color: purple; */
-    background-color: purple;
-    border: none;
+  /* color: purple; */
+  background-color: purple;
+  border: none;
 }
 
 .color2 {
-    background-color: rgb(150, 36, 70);
-    border: none;
+  background-color: rgb(150, 36, 70);
+  border: none;
 }
 
 .color3 {
-    background-color: rgb(153, 32, 32);
-    border: none;
+  background-color: rgb(153, 32, 32);
+  border: none;
 }
 
 .color4 {
-    background-color: rgb(152, 184, 36);
-    border: none;
+  background-color: rgb(152, 184, 36);
+  border: none;
 }
 
 .fix-position {
-    display: block;
-    width: 100%;
-    position: fixed;
-    background-color: white;
+  display: block;
+  width: 100%;
+  position: fixed;
+  background-color: white;
 }
