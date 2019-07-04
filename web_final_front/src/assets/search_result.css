@@ -78,3 +78,10 @@
 .restaurant_score > li {
   background-color: blue !important;
 }
+
+.restaurant_info {
+  direction: rtl;
+}
+
+.restaurant_name {
+}

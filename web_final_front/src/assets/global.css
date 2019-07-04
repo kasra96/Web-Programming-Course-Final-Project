@@ -107,7 +107,7 @@
 }
 
 .star_list {
-  display: inline-flex;
+  display: flex;
   justify-content: flex-start;
   flex-direction: row-reverse;
   list-style: none;
@@ -118,4 +118,26 @@
   flex-wrap: wrap;
   margin-top: 10px;
   margin-bottom: 0px;
+  direction: ltr;
+  color: rgb(249, 185, 43);
+}
+
+.categories {
+  color: #4a4a4a;
+  padding: 0em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  flex-direction: row-reverse;
+  list-style: none;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.small_cat_font {
+  font-size: 0.8em;
+  direction: ltr;
 }
