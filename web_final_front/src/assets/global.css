@@ -105,3 +105,17 @@
   position: fixed;
   background-color: white;
 }
+
+.star_list {
+  display: inline-flex;
+  justify-content: flex-start;
+  flex-direction: row-reverse;
+  list-style: none;
+  flex-wrap: wrap;
+  padding-left: 4px;
+  list-style: none;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}

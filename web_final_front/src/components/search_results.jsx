@@ -34,14 +34,14 @@ class Search_results extends Component {
         <div id="main_panel" className="row">
           <div className="restuarant_section col-sm-9">
             <div className="inner_rest_sec">
-              <div className="restaurant_subsection">
+              <div className="restaurant_subsection row">
                 <h4>opens</h4>
                 {this.props.open_restaurant_array.map(restaurant => (
                   <Restaurant key={restaurant._id} rest_info={restaurant} />
                 ))}
               </div>
               <div className="w-100" />
-              <div className="restaurant_subsection">
+              <div className="restaurant_subsection row">
                 {this.props.close_restaurant_array.map(restaurant => (
                   <Restaurant key={restaurant._id} rest_info={restaurant} />
                 ))}

@@ -65,3 +65,16 @@
   background-color: cornsilk;
   margin: 1em;
 }
+
+.button_section {
+  background-color: blueviolet;
+  clear: both;
+}
+
+.restaurant_logo {
+  float: right;
+}
+
+.restaurant_score > li {
+  background-color: blue !important;
+}
