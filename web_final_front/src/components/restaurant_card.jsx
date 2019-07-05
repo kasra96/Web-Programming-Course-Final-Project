@@ -27,6 +27,7 @@ class restaurant_card extends Component {
                 })}
               </ul>
             </div>
+            <div>{this.props.rest_info.address.addressLine}</div>
           </div>
         </div>
         <div className="button_section text-center">
