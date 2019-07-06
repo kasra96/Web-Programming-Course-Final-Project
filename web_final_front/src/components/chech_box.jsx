@@ -7,8 +7,6 @@ class Check_box extends Component {
   render() {
     return (
       <div className="form-check">
-        {console.log("id:")}
-        {console.log(this.props.name)}
         <input
           className="form-check-input"
           type="checkbox"

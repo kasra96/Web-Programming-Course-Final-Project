@@ -10,27 +10,38 @@ class Search_results extends Component {
     var filtered_restaurants = new Array();
     for (var i = 0; i < restaurants.length; i++) {
       if (
-        restaurants[i].name.startsWith(this.state.local_restaurant_search_input)
+        restaurants[i].name.search(this.state.local_restaurant_search_input) !=
+        -1
       ) {
         filtered_restaurants.push(restaurants[i]);
       }
     }
 
-    var filtered_restaurants_by_food = new Array();
-    for (var i = 0; i < filtered_restaurants.length; i++) {
-      var chooseRestaurant = false;
-      for (var j = 0; j < filtered_restaurants[i].foods.length; j++) {
-        for (var k = 0; k < this.state.checked_foods; k++)
-          if (
-            filtered_restaurants[i].foods[j].persian_foodSet ==
-            this.state.checked_foods[k]
-          )
-            chooseRestaurant = true;
+    if (this.state.checked_foods.length > 0) {
+      var filtered_restaurants_by_food = new Array();
+      for (var i = 0; i < filtered_restaurants.length; i++) {
+        var chooseRestaurant = false;
+        for (var j = 0; j < filtered_restaurants[i].foods.length; j++) {
+          console.log("look1");
+          for (var k = 0; k < this.state.checked_foods.length; k++) {
+            if (
+              filtered_restaurants[i].foods[j].persian_foodSet ==
+              this.state.checked_foods[k]
+            )
+              chooseRestaurant = true;
+
+            console.log("look");
+            console.log(filtered_restaurants[i].foods[j].persian_foodSet);
+            console.log(this.state.checked_foods[k]);
+          }
+        }
+        if (chooseRestaurant)
+          filtered_restaurants_by_food.push(filtered_restaurants[i]);
       }
-      filtered_restaurants_by_food.push(filtered_restaurants[i]);
+      filtered_restaurants = filtered_restaurants_by_food;
     }
 
-    return filtered_restaurants_by_food.map(restaurant => (
+    return filtered_restaurants.map(restaurant => (
       <Restaurant key={restaurant._id} rest_info={restaurant} />
     ));
   }

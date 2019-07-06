@@ -15,7 +15,7 @@ class restaurant_card extends Component {
           <div className="restaurant_info">
             {console.log(this.props.rest_info)}
             <span className="restaurant_name">{this.props.rest_info.name}</span>
-            <Stars average={3.3} />
+            <Stars average={this.props.rest_info.averageRate} />
             <div>
               <ul className="categories small_cat_font">
                 {this.props.rest_info.categories.map((c, i) => {
