@@ -22,7 +22,7 @@ db.once("open", function() {
 
 app.use(express.json());
 
-init_restaurant();
+// init_restaurant();
 
 //routers
 const foodRouter = require("./routes/restaurantRouter.js");
