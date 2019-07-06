@@ -16,7 +16,21 @@ class Search_results extends Component {
       }
     }
 
-    return filtered_restaurants.map(restaurant => (
+    var filtered_restaurants_by_food = new Array();
+    for (var i = 0; i < filtered_restaurants.length; i++) {
+      var chooseRestaurant = false;
+      for (var j = 0; j < filtered_restaurants[i].foods.length; j++) {
+        for (var k = 0; k < this.state.checked_foods; k++)
+          if (
+            filtered_restaurants[i].foods[j].persian_foodSet ==
+            this.state.checked_foods[k]
+          )
+            chooseRestaurant = true;
+      }
+      filtered_restaurants_by_food.push(filtered_restaurants[i]);
+    }
+
+    return filtered_restaurants_by_food.map(restaurant => (
       <Restaurant key={restaurant._id} rest_info={restaurant} />
     ));
   }
@@ -118,7 +132,7 @@ class Search_results extends Component {
                   on_click={this.on_click}
                 />
               ))}
-              <hr />
+              <hr className="sideBarLine" />
               {this.filter_checkBox(this.props.foods_array)}
             </div>
           </div>
