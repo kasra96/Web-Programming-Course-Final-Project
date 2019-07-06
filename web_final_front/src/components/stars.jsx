@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "../assets/main.css";
 import "../assets/global.css";
 
-class Start extends Component {
+class Stars extends Component {
   state = {};
   initialize(average) {
     var starArr = new Array();
@@ -32,4 +32,4 @@ class Start extends Component {
   }
 }
 
-export default Start;
+export default Stars;

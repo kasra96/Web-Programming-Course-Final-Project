@@ -89,3 +89,7 @@
 .text-right {
   direction: rtl;
 }
+
+.inner_cat_sec {
+  direction: rtl;
+}
