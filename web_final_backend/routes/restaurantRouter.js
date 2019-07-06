@@ -64,8 +64,6 @@ restaurantRouter
   })
 
   .get("/:id", (req, res) => {
-    console.log(req.params.id);
-    let rest_id = req.params.id;
     restaurant.model.findOne(
       { _id: ObjectId(rest_id) },
       (error, restaurant) => {
@@ -102,7 +100,7 @@ restaurantRouter
   .get("/:id/comments", (req, res) => {
     restaurant.model.findOne(
       { _id: ObjectId(req.params.id) },
-      (error, restaurants) => {
+      (error, restaurant) => {
         if (error) {
           res.set("Access-Control-Allow-Origin", "*");
           res.send(error);

@@ -57,11 +57,11 @@ function init_restaurant() {
   cat_drink.persian_name = "نوشیدنی";
   cat_drink.save();
   let restaurant_obj = new restaurant.model();
-  restaurant_obj.name = "هانی";
+  restaurant_obj.name = "ای تی اف 3";
   let adrs = new address.model();
   adrs.city = "تهران";
   adrs.area = "صادقیه";
-  adrs.addressLine = "تهران فلکه دوم صاقیه بلوار کاشانی";
+  adrs.addressLine = "تهران اکباتان";
   adrs.save();
   restaurant_obj.address = adrs;
   restaurant_obj.categories = [cat_kabab, cat_irani, cat_salad, cat_drink];
@@ -101,8 +101,8 @@ function init_restaurant() {
   food7.persian_foodSet = "سالاد";
   food7.save();
   restaurant_obj.foods = [food1, food11, food5, food6, food7];
-  restaurant_obj.openingTime = 9;
-  restaurant_obj.closingTime = 11;
+  restaurant_obj.openingTime = 12;
+  restaurant_obj.closingTime = 21;
   let cmnt = new comment.model();
   cmnt.author = "اصغر شیرینی";
   cmnt.quality = 1; // a number between 0-5
@@ -121,6 +121,6 @@ function init_restaurant() {
   cmnt2.save();
 
   restaurant_obj.comments = [cmnt, cmnt2];
-  restaurant_obj.averageRate = 2.3;
+  restaurant_obj.averageRate = 5;
   restaurant_obj.save();
 }

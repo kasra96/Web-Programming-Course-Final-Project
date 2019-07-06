@@ -67,7 +67,6 @@
 }
 
 .button_section {
-  background-color: blueviolet;
   clear: both;
 }
 
@@ -96,4 +95,12 @@
 
 .sideBarLine {
   height: 2px;
+}
+
+.rest_header {
+  text-align: center;
+}
+
+.gray {
+  background-color: gray;
 }

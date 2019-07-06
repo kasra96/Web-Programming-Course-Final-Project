@@ -42,7 +42,11 @@ class Search_results extends Component {
     }
 
     return filtered_restaurants.map(restaurant => (
-      <Restaurant key={restaurant._id} rest_info={restaurant} />
+      <Restaurant
+        key={restaurant._id}
+        rest_info={restaurant}
+        show_restaurant={this.props.show_restaurant}
+      />
     ));
   }
 
@@ -104,7 +108,9 @@ class Search_results extends Component {
           {this.props.open_restaurant_array.length +
             this.props.close_restaurant_array.length}
           رستوران امکان سرویس‌دهی به
-          <abbr>{" تهران "}</abbr>را دارند
+          <span>&nbsp;</span>
+          <abbr>{this.props.cityName}</abbr>
+          <span>&nbsp;</span>را دارند
         </h3>
         <hr />
         <div className="search-container">
@@ -128,7 +134,7 @@ class Search_results extends Component {
                 {this.filter_restaurant(this.props.open_restaurant_array)}
               </div>
               <div className="w-100" />
-              <div className="restaurant_subsection row">
+              <div className="restaurant_subsection row gray">
                 {this.filter_restaurant(this.props.close_restaurant_array)}
               </div>
             </div>

@@ -141,3 +141,19 @@
   font-size: 0.8em;
   direction: ltr;
 }
+
+.header_res {
+  width: 50%;
+  text-align: center;
+}
+
+.restaurant_logo_main {
+  align-self: center;
+}
+
+.restaurant_info_main {
+  align-self: center;
+  align-content: center;
+  width: 100%;
+  height: auto;
+}

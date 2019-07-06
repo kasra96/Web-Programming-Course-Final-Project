@@ -31,8 +31,12 @@ class restaurant_card extends Component {
           </div>
         </div>
         <div className="button_section text-center">
-          <button type="button" className="btn btn-info">
-            Link
+          <button
+            type="button"
+            className="btn btn-info"
+            onClick={() => this.props.show_restaurant(this.props.rest_info._id)}
+          >
+            شروع سفارش
           </button>
         </div>
       </div>
